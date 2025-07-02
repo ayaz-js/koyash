@@ -51,9 +51,9 @@ function App() {
 
   return (
     <div className="container">
-      <img src="/love-red.png" alt="" className="love-red" />
-      <img src="/paralax-1.png" alt="" className="love-bottom" />
-      <img src="/love-orange.png" alt="" className="love-orange" />
+      <img src="/src/assets/love-red.png" alt="" className="love-red" />
+      <img src="/src/assets/paralax-1.png" alt="" className="love-bottom" />
+      <img src="/src/assets/love-orange.png" alt="" className="love-orange" />
       <h1 className="title">{randomLoveMessage}</h1>
       <button onClick={handleButtonClick} className="button">
         {randomButtonEmoji}
