@@ -51,9 +51,9 @@ function App() {
 
   return (
     <div className="container">
-      <img src="/src/assets/love-red.png" alt="" className="love-red" />
-      <img src="/src/assets/paralax-1.png" alt="" className="love-bottom" />
-      <img src="/src/assets/love-orange.png" alt="" className="love-orange" />
+      <img src={`${import.meta.env.BASE_URL}love-red.png`} className="love-red" alt=""/>
+      <img src={`${import.meta.env.BASE_URL}paralax-1.png`} className="love-bottom" alt=""/>
+      <img src={`${import.meta.env.BASE_URL}love-orange.png`} className="love-orange" alt=""/>
       <h1 className="title">{randomLoveMessage}</h1>
       <button onClick={handleButtonClick} className="button">
         {randomButtonEmoji}
