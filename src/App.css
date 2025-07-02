@@ -1,0 +1,110 @@
+#root {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  max-width: 1280px;
+  margin: 0 auto;
+  padding: 2rem;
+  text-align: center;
+  overflow: hidden;
+  position: relative;
+  width: 100%;
+  min-height: 100vh;
+  height: 100%;
+}
+
+.love-red {
+  position: absolute;
+  top: 20%;
+  left: 0;
+  width: 100px;
+  height: 100px;
+  animation: pulseFastAnimation 0.6s ease 0s infinite alternate forwards;
+}
+
+.love-orange {
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 74px;
+  height: 74px;
+  animation: pulseFastAnimation 0.6s ease 0s infinite alternate forwards;
+}
+
+.love-bottom {
+  position: absolute;
+  right: 0;
+  bottom: 4%;
+  width: 100px;
+  height: 100px;
+  animation: pulseFastAnimation 0.6s ease 0s infinite alternate forwards;
+}
+
+.button {
+  font-size: 24px;
+  line-height: 28px;
+  padding: 8px 0;
+  max-width: 100px;
+  width: 100%;
+}
+
+@keyframes pulseFastAnimation {
+  0% {
+    transform: scale(1);
+  }
+  100% {
+    transform: scale(.9);
+  }
+}
+
+@keyframes rotateAnimation {
+  0% {
+    transform: rotate(0) scale(1);
+    transform-origin: 50% 50%;
+  }
+
+  100% {
+    transform-origin: 50% 50%;
+    transform: rotate(8deg);
+  }
+
+  10% {
+    transform: rotate(8deg);
+  }
+
+  20%, 40%, 60% {
+    transform: rotate(-10deg);
+  }
+
+  30%, 50% {
+    transform: rotate(10deg);
+  }
+
+  70% {
+    transform: scale(.8) rotate(-8deg);
+  }
+}
+
+
+@media screen and (max-width: 568px) {
+  .title {
+    font-size: 32px;
+    line-height: 36px;
+  }
+
+  .love-red {
+    left: -10%;
+  }
+
+  .love-orange {
+    right: -6%;
+  }
+
+  .love-bottom {
+    right: -6%;
+  }
+
+  .button {
+    max-width: 80px;
+  }
+}
